@@ -62,11 +62,12 @@ import ScrollToTop from './ScrollToTop'
 import ProductRangePage from './pages/ProductRangePage'
 import WhyUsPage from './pages/WhyUsPage'
 import ContactUsPage from './pages/ContactUsPage'
+import NewHero from './components/NewHero/NewHero';
 function Home() {
   return (
     <>
       <Header/>
-      <Hero />
+      <NewHero/>
       <VisionMission/>
       <ProductsMegaCarousel/>
       <Reasons />     
