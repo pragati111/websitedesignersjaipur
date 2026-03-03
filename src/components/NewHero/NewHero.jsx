@@ -3,28 +3,28 @@ import "./NewHero.css";
 
 const data = [
   {
-    title: "Hands-On Learning",
-    text: "Learn by building real projects with practical guidance and modern tools.",
+    title: "Beautiful Websites That Convert",
+    text: "We design and develop stunning, high-performance websites that attract customers and turn visitors into real business.",
     image: "https://picsum.photos/600/500?random=1",
   },
   {
-    title: "Creative Design",
-    text: "Explore beautiful UI concepts and improve your visual design skills.",
+    title: "Premium Design at Affordable Cost",
+    text: "Get a modern, responsive and professional website without spending a fortune. Quality design that fits your budget.",
     image: "https://picsum.photos/600/500?random=2",
   },
   {
-    title: "Smart Development",
-    text: "Write scalable and clean code using the latest technologies.",
+    title: "Websites for Every Industry",
+    text: "From doctors, schools and lawyers to ecommerce, manufacturers and startups — we create tailored websites for every field.",
     image: "https://picsum.photos/600/500?random=3",
   },
   {
-    title: "Fast Performance",
-    text: "Optimize websites for speed, SEO and great user experience.",
+    title: "Fast, SEO-Friendly & Mobile Ready",
+    text: "Optimized for speed, search engines and all devices so your business performs perfectly everywhere.",
     image: "https://picsum.photos/600/500?random=4",
   },
   {
-    title: "Launch & Grow",
-    text: "Deploy your product and grow your digital presence confidently.",
+    title: "Launch Your Digital Presence",
+    text: "Build your online identity with confidence and grow your brand with a website that truly represents you.",
     image: "https://picsum.photos/600/500?random=5",
   },
 ];
