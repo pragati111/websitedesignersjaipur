@@ -1,31 +1,36 @@
 import React, { useState, useEffect } from "react";
 import "./NewHero.css";
+import bg1 from "../../assets/01.png"
+import bg2 from "../../assets/02.png"
+import bg3 from "../../assets/03.png"
+import bg4 from "../../assets/04.png"
+import bg5 from "../../assets/05.png"
 
 const data = [
   {
     title: "Beautiful Websites That Convert",
     text: "We design and develop stunning, high-performance websites that attract customers and turn visitors into real business.",
-    image: "https://picsum.photos/600/500?random=1",
+    image: bg1,
   },
   {
-    title: "Premium Design at Affordable Cost",
+    title: "Premium Looking Websites at Affordable Cost",
     text: "Get a modern, responsive and professional website without spending a fortune. Quality design that fits your budget.",
-    image: "https://picsum.photos/600/500?random=2",
+    image: bg2,
   },
   {
     title: "Websites for Every Industry",
     text: "From doctors, schools and lawyers to ecommerce, manufacturers and startups — we create tailored websites for every field.",
-    image: "https://picsum.photos/600/500?random=3",
+    image: bg3,
   },
   {
     title: "Fast, SEO-Friendly & Mobile Ready",
     text: "Optimized for speed, search engines and all devices so your business performs perfectly everywhere.",
-    image: "https://picsum.photos/600/500?random=4",
+    image: bg4,
   },
   {
     title: "Launch Your Digital Presence",
     text: "Build your online identity with confidence and grow your brand with a website that truly represents you.",
-    image: "https://picsum.photos/600/500?random=5",
+    image: bg5,
   },
 ];
 
