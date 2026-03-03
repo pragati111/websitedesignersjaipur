@@ -1,0 +1,161 @@
+.process-section {
+  padding: 100px 5%;
+}
+
+.process-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* CARD */
+.process-card {
+  border-radius: 20px;
+  background: transparent;
+  flex: 1;
+  padding: 80px 30px 60px;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  overflow: hidden;
+  min-height: 350px;
+  transition: 0.3s ease;
+  border: 1px solid #ac8c8c;
+}
+
+.process-card:hover {
+  transform: translateY(-10px);
+}
+
+/* RIBBON */
+.ribbon {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  padding: 25px 60px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 15px;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+/* STEP NUMBER */
+.step-number {
+  position: absolute;
+  bottom: 16px;
+  left: -10px;
+  padding: 10px 40px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(10, 9, 9);
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+/* COLORS */
+.process-card.blue .ribbon,
+.process-card.blue .step-number {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #8185ff,
+    #ffffff
+  );
+}
+
+.process-card.red .ribbon,
+.process-card.red .step-number {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #9fff98,
+    #ffffff
+  );
+}
+
+.process-card.yellow .ribbon,
+.process-card.yellow .step-number {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #fcff5f,
+    #ffffff 
+  );
+}
+
+.process-card.dark .ribbon,
+.process-card.dark .step-number {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #ff8b8b,
+    #ffffff
+  );
+}
+
+/* CONTENT */
+.card-content {
+  margin-top: 50px;
+  color: #160f0f;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+/* Instead of column, keep them together smaller */
+@media (max-width: 768px) {
+  .process-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .process-card {
+    flex: 0 0 48%;
+    min-height: 250px;
+    padding: 60px 15px 50px;
+  }
+
+  .ribbon {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+
+  .step-number {
+    font-size: 28px;
+    padding: 8px 25px;
+  }
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 768px) {
+
+  .process-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .process-card {
+    min-height: 240px;
+    padding: 60px 15px 50px;
+  }
+
+  .ribbon {
+    font-size: 13px;
+    padding: 8px 22px;
+  }
+
+  .step-number {
+    font-size: 24px;
+    padding: 6px 20px;
+    bottom: 15px;
+  }
+
+  .card-heading {
+    font-size: 16px;
+  }
+
+  .card-description {
+    font-size: 13px;
+  }
+
+}

@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from './components/Header/Header';
-import VisionMission from './components/VisionMission/VisionMission';
 import Reasons from './components/NewReasons/NewReasons';
 
 import IndustrialFooter from './components/IndustrialFooter/IndustrialFooter';
@@ -12,13 +11,14 @@ import ProductRangePage from './pages/ProductRangePage'
 import WhyUsPage from './pages/WhyUsPage'
 import ContactUsPage from './pages/ContactUsPage'
 import NewHero from './components/NewHero/NewHero';
+import ProcessSteps from './components/ProcessSteps/ProcessSteps';
 function Home() {
   return (
     <>
       <Header/>
       <NewHero/>
-      <VisionMission/>
       <IndustriesWeServe/>
+      <ProcessSteps/>
       <Reasons/>
       <IndustrialFooter/> 
     </>
