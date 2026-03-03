@@ -1,58 +1,64 @@
-import React from "react";
-import "./ProcessSteps.css";
+import React from 'react';
+import './ProcessSteps.css';
 
 const steps = [
   {
-    title: "Understanding Your Vision",
-    number: "Step 01",
-    color: "blue",
-    text: "We gather all the essential details about your business, goals, target audience, design preferences, and required features to ensure the website reflects your brand perfectly."
+    id: '01',
+    title: 'Understanding Your Vision',
+    description: 'We gather all the essential details about your business, goals, target audience, and required features to ensure the website reflects your brand perfectly.',
+    color: '#818cf8',
+    icon: '💡' // You can replace these with Lucide-react or FontAwesome icons
   },
   {
-    title: "Strategic Planning & Wireframing",
-    number: "Step 02",
-    color: "red",
-    text: "We create a clear structure, layout flow, and content strategy. This ensures your website is not just beautiful, but also user-friendly and conversion-focused."
+    id: '02',
+    title: 'Strategic Planning & Wireframing',
+    description: 'We create a clear structure, layout flow, and content strategy. This ensures your website is not just beautiful, but also user-friendly and conversion-focused.',
+    color: '#4ade80',
+    icon: '📐'
   },
   {
-    title: "Designing & Building Your Website",
-    number: "Step 03",
-    color: "yellow",
-    text: "We design a modern, responsive interface and develop your website using clean, scalable code to ensure speed, performance, and long-term reliability."
+    id: '03',
+    title: 'Designing & Building Website',
+    description: 'We design a modern, responsive interface and develop your website using clean, scalable code to ensure speed, performance, and long-term reliability.',
+    color: '#fbbf24',
+    icon: '💻'
   },
   {
-    title: "Your Approval, Testing, Optimization & Launch",
-    number: "Step 04",
-    color: "dark",
-    text: "Before going live, we take your approval first with the content and design of the website and finally test your website across devices and browsers, optimize performance, and ensure everything runs flawlessly before launch."
+    id: '04',
+    title: 'Approval, Testing, & Launch',
+    description: 'Before going live, we take your approval, test across devices and browsers, and optimize performance to ensure everything runs flawlessly before launch.',
+    color: '#f87171',
+    icon: '🚀'
   }
 ];
 
 const ProcessSteps = () => {
   return (
     <section className="process-section">
-        <h2 className="reasons-title">
-        Our Proven  <span>4-Step Framework</span>
-        </h2>
-        <p className="reasons-subtitle">
-            A strategic process that ensures your website is not just beautiful — but purposeful, optimized, and built to grow your business.
-        </p>
-      <div className="process-container">
-        {steps.map((step, index) => (
-          <div className={`process-card ${step.color}`} key={index}>
-            
-            <div className="ribbon">
-              {step.title}
-            </div>
+      <div className="process-header">
+        <h2>Our Proven <span className="highlight">4-Step Process</span></h2>
+        <p>A strategic process that ensures your website is not just beautiful — but purposeful, optimized, and built to grow your business.</p>
+      </div>
 
-            <div className="card-content">
-                <p className="card-description">{step.text}</p>
+      <div className="process-grid">
+        {steps.map((step) => (
+          <div key={step.id} className="process-card">
+            <div className="card-top-accent" style={{ backgroundColor: step.color }}></div>
+            <div className="icon-wrapper" style={{ color: step.color }}>
+              {step.icon}
             </div>
+            <h3>Step {step.id}: {step.title}</h3>
+            <p>{step.description}</p>
+          </div>
+        ))}
+      </div>
 
-            <div className="step-number">
-              {step.number}
-            </div>
-
+      {/* Optional Progress Line at the bottom */}
+      <div className="progress-line-container">
+        <div className="line"></div>
+        {steps.map((step) => (
+          <div key={step.id} className="progress-node" style={{ backgroundColor: step.color }}>
+            {step.id.replace('0', '')}
           </div>
         ))}
       </div>
