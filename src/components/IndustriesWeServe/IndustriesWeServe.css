@@ -1,0 +1,116 @@
+.reasons-section {
+  padding: 100px 6%;
+  text-align: center;
+}
+
+.reasons-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.reasons-title span {
+  color: #6366f1;
+}
+
+.reasons-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 70px;
+}
+
+/* GRID */
+.reasons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+
+.white-card {
+  background: transparent;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.reason-card {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.white-card:hover {
+  transform: translateY(-10px);
+  z-index: 2;
+}
+.reasons-container {
+  align-items: stretch;
+}
+
+/* REMOVE PIN */
+.pin {
+  display: none;
+}
+
+/* INNER CONTENT */
+.colored-card {
+  border-radius: 13px;
+  padding: 13px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.icon {
+  margin-bottom: 15px;
+}
+
+.colored-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+/* SCROLLABLE LIST AREA */
+.colored-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Custom Scrollbar */
+.colored-card p::-webkit-scrollbar {
+  width: 6px;
+}
+
+.colored-card p::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .colored-card p {
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .white-card {
+    padding: 25px;
+  }
+
+  .reasons-title {
+    font-size: 28px;
+  }
+
+  .reasons-subtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+}

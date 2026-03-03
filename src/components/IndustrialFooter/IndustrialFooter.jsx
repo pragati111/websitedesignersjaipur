@@ -15,7 +15,7 @@ const IndustrialFooter = () => {
         </div>
         <div className="cta-icon">
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@falconenggindia.in"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=pragatinov@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -29,14 +29,15 @@ const IndustrialFooter = () => {
         <div className="footer-left">
           <div className="footer-item">
             <FaPhoneAlt className="footer-icon" />
-            <span><strong>+91-8290062999 , +91-8619099879</strong></span>
+            <span><strong>+91-9929988684</strong></span>
           </div>
 
           <div className="footer-item">
             <FaMapMarkerAlt className="footer-icon" />
             <span>
-              <strong>Registered Office:</strong> 730, Silver Crown, Vardhman Group,
-              Gandhi Path West, Jaipur 302021
+              <strong>Our Office:</strong> Shop No-60, Sector-09, 
+              Park Ave Rd, near Hanuman Mandir, Palika Bazar, 
+              Siddharth Nagar, Sector 9, Malviya Nagar, Jaipur, Rajasthan 302017
             </span>
           </div>
           <div className="footer-item footer-email">
@@ -44,7 +45,7 @@ const IndustrialFooter = () => {
           <span>
             <strong>Mail Id:</strong>{" "}
             <span>
-              sales@falconenggindia.in
+              pragatinov@gmail.com
             </span>
           </span>
         </div>

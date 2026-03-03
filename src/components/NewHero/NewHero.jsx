@@ -36,7 +36,7 @@ export default function NewHero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActive((prev) => (prev + 1) % data.length);
-    }, 2000); // change every 4s
+    }, 3000); // change every 4s
 
     return () => clearInterval(interval);
   }, []);

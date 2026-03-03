@@ -56,7 +56,7 @@ import FalconEco from './components/SeperatePages/MetalWorkingFluids/FalconEco/F
 import FalconTrot from './components/SeperatePages/MetalWorkingFluids/FalconTrot/FalconTrot'
 
 import IndustrialFooter from './components/IndustrialFooter/IndustrialFooter';
-import Reasons from './components/Reasons/Reasons';
+import IndustriesWeServe from './components/IndustriesWeServe/IndustriesWeServe';
 import ScrollToTop from './ScrollToTop'
 import ProductRangePage from './pages/ProductRangePage'
 import WhyUsPage from './pages/WhyUsPage'
@@ -69,7 +69,7 @@ function Home() {
       <NewHero/>
       <VisionMission/>
       <ProductsMegaCarousel/>
-      <Reasons />     
+      <IndustriesWeServe/>
       <IndustrialFooter/> 
     </>
   );
