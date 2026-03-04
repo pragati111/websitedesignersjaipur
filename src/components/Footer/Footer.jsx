@@ -52,11 +52,11 @@ const Footer = () => {
           </div>
 
           <div className="footer-col">
-            <h4>Quick Links</h4>
+            <h4>Quick Links</h4> {/* Put Google Page and LinkedIn links here  */}
             <ul className="footer-links">
               <li><a href="#home">Home</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="#why-us">Why Us?</a></li>
+              <li><a href="#our-work">Our Work</a></li>
             </ul>
           </div>
         </div>
