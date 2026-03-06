@@ -54,19 +54,59 @@
 
 .work-card,
 .feedback-card{
-  position:relative;
-  width:420px;
-  height:600px;
-  border-radius:15px;
-  padding:30px;
-  box-sizing:border-box;
-  box-shadow: 0 8px 20px rgba(217, 82, 65, 0.3) ;
+  position: relative;
+  z-index: 1;
+  width: 420px;
+  height: 600px;
+  border-radius: 15px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.25),
+    0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.work-card::before,
+.feedback-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(225, 225, 225, 0.5),
+    rgba(255, 255, 255, 0.7)
+  );
+  background-size: 200% 200%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  animation: silver-shimmer 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .card-title{
   text-align:center;
   font-size:16px;
   margin-bottom:30px;
+}
+
+@keyframes silver-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* TEXT LINES */
