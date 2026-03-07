@@ -121,15 +121,15 @@
 }
 
 .submit-btn{
-  padding:18px;
+  padding:16px 40px;
   border:none;
-  border-radius:10px;
-  background:linear-gradient(135deg,#c7a17a,#b38b62);
-  color:white;
+  border-radius:9px;
   font-size:18px;
-  font-weight:600;
   cursor:pointer;
-  transition:all 0.3s ease;
+  background:linear-gradient(45deg,#c9a86a,#e6c68a);
+  color:#1a1a1a;
+  font-weight:600;
+  transition:0.3s;
 }
 
 .submit-btn:hover{
