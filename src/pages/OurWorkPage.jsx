@@ -6,6 +6,7 @@ import workImg2 from "../assets/final2.png";
 import feedbackImg from "../assets/final3.jpeg";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import InfiniteScrollBar from "../components/InfiniteScrollBar/InfiniteScrollBar";
 
 const OurWorkPage = () => {
   return (
@@ -18,7 +19,10 @@ const OurWorkPage = () => {
 
       <h3 className="card-title">Our Work (As per the client's demand)</h3>
 
-      <div className="work-item">
+      <div
+        className="work-item"
+        onClick={() => window.open("https://falconengg.in", "_blank")}
+      >
 
         <img src={workImg1} alt="work1" className="work-image"/>
 
@@ -35,7 +39,10 @@ const OurWorkPage = () => {
 
       </div>
 
-      <div className="work-item">
+      <div
+        className="work-item"
+        onClick={() => window.open("https://crownstarcolours.in", "_blank")}
+      >
 
         <img src={workImg2} alt="work2" className="work-image"/>
 
@@ -65,8 +72,9 @@ const OurWorkPage = () => {
         </div>
 
       </div>
-
+      
     </div>
+    <InfiniteScrollBar />
     <Footer/>
     </>
   );

@@ -1,0 +1,39 @@
+.scroll-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scrollAnimation 20s linear infinite;
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  padding: 0 20px;
+}
+
+.scroll-item img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Infinite scrolling animation */
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover (optional premium touch) */
+
+.scroll-container:hover .scroll-track {
+  animation-play-state: paused;
+}
