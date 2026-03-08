@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css'
-import Logo from '../../assets/falcon_logo.png'
+import Logo from '../../assets/wdj_logo.png'
 import Bars from '../../assets/bars.png'
 import { useNavigate } from 'react-router-dom'
 
