@@ -90,18 +90,21 @@
   max-width: 900px;
   margin: 60px auto 0;
   position: relative;
+  padding: 0 15px;
 }
 
-.progress-line-container .line {
+.progress-line-container::before {
+  content: "";
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
+  left: 30px;
+  right: 30px;
   height: 4px;
   background: #e0e0e0;
-  z-index: 1;
   transform: translateY(-50%);
+  z-index: 0;
 }
+
 
 .progress-node {
   width: 30px;

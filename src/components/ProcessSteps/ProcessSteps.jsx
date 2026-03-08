@@ -55,7 +55,6 @@ const ProcessSteps = () => {
 
       {/* Optional Progress Line at the bottom */}
       <div className="progress-line-container">
-        <div className="line"></div>
         {steps.map((step) => (
           <div key={step.id} className="progress-node" style={{ backgroundColor: step.color }}>
             {step.id.replace('0', '')}
