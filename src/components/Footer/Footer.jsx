@@ -60,8 +60,7 @@ const Footer = () => {
             <div className="contact-item">
               <MapPin size={18} className="icon" />
               <span>
-                Shop No-60, Sector-09, Park Ave Rd, near Hanuman Mandir, Palika
-                Bazar, Siddharth Nagar, Sector 9, Malviya Nagar, Jaipur, Rajasthan 302017
+                Shop No. 60, Palika Bazaar, Near Hanuman Mandir, Park Avenue road, Malviya Nagar, Jaipur, Rajasthan
               </span>
             </div>
           </div>
